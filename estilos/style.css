@@ -1,0 +1,162 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-subtitulo: 'Staatliches', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: url('../imagens/fundo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+body > img {
+    width: 80%;
+}
+
+.gradient-titulo {
+    font-size: 4em;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    /* fundo gradiente */
+    background-image: linear-gradient(#0CABA8, #8406d6);
+    /* agora colocamos o fundo gradiente dentro do texto com essa propriedade */
+    background-clip: text;
+    -webkit-background-clip: text;
+    /* a cor do texto deve estar como transparent */
+    color: transparent;
+  }
+
+.gradient-sub {
+    font-size: 2.7em;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    /* fundo gradiente */
+    background-image: linear-gradient(to right, #003598, #b51e8b, #ffcb05, #ed1c24);
+    /* agora colocamos o fundo gradiente dentro do texto com essa propriedade */
+    background-clip: text;
+    -webkit-background-clip: text;
+    /* a cor do texto deve estar como transparent */
+    color: transparent;
+}
+
+header {
+    background-color: black;
+    text-align: center;
+    min-height: 150px;
+    padding-top: 40px;
+}
+
+header h1 {
+    color: white;
+    font-family: var(--fonte-destaque);
+    font-weight: normal;
+    font-size: 4em;
+    margin-bottom: 10px;
+}
+/*
+header p {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    line-height: 1.3em;
+    margin-bottom: 8px;
+} */
+
+nav {
+    text-align: left;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.192);
+    padding: 10px;
+}
+
+nav a{
+    color: #6cd5ffd7;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    text-decoration: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    transition-duration: 0.3s;
+}
+
+nav >a:hover {
+    background-image: linear-gradient(to right, #44E3D3, #035bff);
+    color: black;
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.678);
+    padding: 20px;
+    min-width: 300px;
+    max-width: 850px;
+    margin: auto;
+    margin-bottom: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main h1 {
+    font-family: var(--fonte-destaque);
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+main h2 {
+    font-family: var(--fonte-subtitulo);
+    font-size: 2em;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+    background-image: linear-gradient(to right, #44E3D3, transparent);
+    text-indent: 8px;
+}
+
+main p {
+    text-align: justify;
+    margin: 15px 0px;
+    text-indent: 30px;
+    line-height: 1.3em;
+    font-weight: 600;
+}
+
+main div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+main img {
+    width: 100%;
+}
+
+
+footer {
+    background-color: var(--cor5);
+    color: white;  
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
